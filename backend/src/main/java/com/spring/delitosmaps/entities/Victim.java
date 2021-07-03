@@ -10,11 +10,15 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 @Table(name = "tb_victim")
 public class Victim implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	@JsonIgnore
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -22,6 +26,7 @@ public class Victim implements Serializable{
 	private int age;
 	
 
+	@JsonIgnore
 	@OneToOne(mappedBy = "victim", fetch = FetchType.LAZY)
 	private Occurrence occurrence;
 

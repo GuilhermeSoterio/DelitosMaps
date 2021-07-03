@@ -12,6 +12,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 @Table(name = "tb_occurrence")
 public class Occurrence implements Serializable{
@@ -28,10 +31,13 @@ public class Occurrence implements Serializable{
 	private Instant moment;
 	private Boolean alone;
 	
+
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "crime_id")
 	private Crime crime;
 
+	@JsonIgnore
 	@OneToOne
 	@JoinColumn(name = "victim_id")
 	private Victim victim;
