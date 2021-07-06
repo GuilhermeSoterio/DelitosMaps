@@ -8,12 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -26,12 +22,6 @@ public class Crime implements Serializable{
 	private Long id;
 	private String typeCrime;
 	
-	@JsonIgnore
-	@OneToOne
-	@JoinColumn(name = "victim_id")
-	private Victim victim;
-	
-	@JsonIgnore
 	@OneToMany(mappedBy = "crime")
 	private List<Occurrence> occurrences = new ArrayList<>();
 	

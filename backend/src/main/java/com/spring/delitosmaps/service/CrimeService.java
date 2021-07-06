@@ -1,12 +1,14 @@
 package com.spring.delitosmaps.service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.spring.delitosmaps.exceptions.ObjectNotFoundException;
 import com.spring.delitosmaps.dto.CrimeDTO;
 import com.spring.delitosmaps.entities.Crime;
 import com.spring.delitosmaps.repositories.CrimeRepository;
@@ -23,10 +25,12 @@ public class CrimeService {
 		List<Crime> list = repository.findAll();
 		return list.stream().map(x -> new CrimeDTO(x)).collect(Collectors.toList());
 	}
-/*	
+	
 	@Transactional(readOnly = true)
-	public List<GameDTO> findAll() {
-		List<Game> list = repository.findAll();
-		return list.stream().map(x -> new GameDTO(x)).collect(Collectors.toList());
-	}*/
+	public Crime findById(Long id) {
+		Optional<Crime> crime = repository.findById(id);
+		return crime.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! id: " + id + ", Nome: "+ CrimeDTO.class.getName()));
+	}
+	
 }

@@ -67,13 +67,13 @@ public class Occurrence implements Serializable{
 	public double getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(Long longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
 	public double getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(Long latitude) {
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
 	public String getDayOfTheWeek() {
@@ -117,6 +117,14 @@ public class Occurrence implements Serializable{
 		this.crime = crime;
 	}
 	
+	public Victim getVictim() {
+		return victim;
+	}
+	
+	public void setVictim(Victim victim) {
+		this.victim = victim;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -141,6 +149,7 @@ public class Occurrence implements Serializable{
 			return false;
 		return true;
 	}
+
 	
 }
 	

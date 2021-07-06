@@ -9,7 +9,7 @@ public class CrimeDTO implements Serializable{
 	
 	private Long id;
 	private String typeCrime;
-	
+
 	public CrimeDTO() {
 	}
 	
