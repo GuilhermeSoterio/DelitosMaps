@@ -3,7 +3,9 @@ package com.spring.delitosmaps.dto;
 import java.io.Serializable;
 import java.time.Instant;
 
+
 import com.spring.delitosmaps.entities.Occurrence;
+import com.spring.delitosmaps.entities.enums.District;
 
 public class OccurrenceDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -17,10 +19,20 @@ public class OccurrenceDTO implements Serializable{
 	private Instant moment;
 	private Boolean alone;
 	private String victimGenre;
+	private int victimAge;
 	private String crimeTypeName;
+	private District district;
 	
-	private Long crimeId;
-	private Long victimId;
+	private Long crimeID;
+	private Long victimID;
+	
+	public District getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(District district) {
+		this.district = district;
+	}
 	
 	public OccurrenceDTO() {
 	}
@@ -34,8 +46,17 @@ public class OccurrenceDTO implements Serializable{
 		felonious_description = entity.getFelonious_description();
 		moment = entity.getMoment();
 		alone = entity.getAlone();
+		district = entity.getDistrict();/*
+		victimGenre = entity.getVictim().getGenre();
+		victimAge = entity.getVictim().getAge();
+		crimeTypeName = entity.getCrime().getTypeCrime();
+		*/
+		setVictimAge(entity.getVictim().getAge());
 		setVictimGenre(entity.getVictim().getGenre());
 		setCrimeTypeName(entity.getCrime().getTypeCrime());
+		
+		//Gambiarra
+		//setCrimeID(entity.getCrime().getId());
 	}
 	
 	
@@ -103,7 +124,7 @@ public class OccurrenceDTO implements Serializable{
 	public void setCrimeTypeName(String crimeTypeName) {
 		this.crimeTypeName = crimeTypeName;
 	}
-
+/*
 	public Long getCrimeId() {
 		return crimeId;
 	}
@@ -119,6 +140,33 @@ public class OccurrenceDTO implements Serializable{
 	public void setVictimId(Long victimId) {
 		this.victimId = victimId;
 	}
+	*/
+
+	public int getVictimAge() {
+		return victimAge;
+	}
+
+	public void setVictimAge(int victimAge) {
+		this.victimAge = victimAge;
+	}
+/*
 	
+	public Long getCrimeID() {	
+		return crimeID;
+	}
+
+	public Long getVictimID() {
+		return victimID;
+	}
+
+	public void setVictimID(Long victimID) {
+		this.victimID = victimID;
+	}
+
+	public void setCrimeID(Long crimeID) {
+		this.crimeID = crimeID;
+	}*/
+	
+
 
 }

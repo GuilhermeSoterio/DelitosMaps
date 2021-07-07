@@ -18,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Victim implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	@JsonIgnore
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -26,7 +25,6 @@ public class Victim implements Serializable{
 	private int age;
 	
 
-	@JsonIgnore
 	@OneToOne(mappedBy = "victim", fetch = FetchType.LAZY)
 	private Occurrence occurrence;
 

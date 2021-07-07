@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 @Table(name = "tb_crime")
@@ -22,14 +24,14 @@ public class Crime implements Serializable{
 	private Long id;
 	private String typeCrime;
 	
+
 	@OneToMany(mappedBy = "crime")
 	private List<Occurrence> occurrences = new ArrayList<>();
 	
 	public Crime() {
 	}
 
-	public Crime(Long id, String typeCrime, Victim victim) {
-		super();
+	public Crime(Long id, String typeCrime) {
 		this.id = id;
 		this.typeCrime = typeCrime;
 	}
@@ -49,10 +51,10 @@ public class Crime implements Serializable{
 	public void setTypeCrime(String typeCrime) {
 		this.typeCrime = typeCrime;
 	}
-
+/*
 	public List<Occurrence> getOcurrences() {
 		return occurrences;
-	}
+	}*/
 
 	@Override
 	public int hashCode() {

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.spring.delitosmaps.entities.Crime;
 
 @Repository
-public interface CrimeRepository extends JpaRepository<Crime, Long>{
+public interface CrimeRepository extends JpaRepository <Crime, Long> {
+
 
 }

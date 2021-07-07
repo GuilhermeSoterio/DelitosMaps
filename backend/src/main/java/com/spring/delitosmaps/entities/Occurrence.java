@@ -13,6 +13,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.spring.delitosmaps.entities.enums.District;
 
 
 @Entity
@@ -30,14 +31,13 @@ public class Occurrence implements Serializable{
 	private String felonious_description;
 	private Instant moment;
 	private Boolean alone;
+	private District district;
 	
 
-	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "crime_id")
 	private Crime crime;
 
-	@JsonIgnore
 	@OneToOne
 	@JoinColumn(name = "victim_id")
 	private Victim victim;
@@ -46,7 +46,7 @@ public class Occurrence implements Serializable{
 	}
 	
 	public Occurrence(Long id, Long longitude, Long latitude, String dayOfTheWeek, String description,
-			String felonious_description, Instant moment, Boolean alone) {
+			String felonious_description, Instant moment, Boolean alone, Crime crime, Victim victim, District district) {
 		super();
 		this.id = id;
 		this.longitude = longitude;
@@ -56,6 +56,9 @@ public class Occurrence implements Serializable{
 		this.felonious_description = felonious_description;
 		this.moment = moment;
 		this.alone = alone;
+		this.crime = crime;
+		this.victim = victim;
+		this.district = district;
 	}
 	
 	public Long getId() {
@@ -148,6 +151,14 @@ public class Occurrence implements Serializable{
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	public District getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(District district) {
+		this.district = district;
 	}
 
 	
