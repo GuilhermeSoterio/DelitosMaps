@@ -13,7 +13,9 @@ public class CrimeDTO implements Serializable{
 	public CrimeDTO() {
 	}
 	
-	//Recebe a entidade como argumento/parâmetro
+	/*
+	 *Recebe a entidade como argumento/parâmetro 
+	 */
 	public CrimeDTO(Crime entity) {
 		id = entity.getId();
 		typeCrime = entity.getTypeCrime();
