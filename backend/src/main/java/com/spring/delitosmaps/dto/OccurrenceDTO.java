@@ -22,9 +22,7 @@ public class OccurrenceDTO implements Serializable{
 	private int victimAge;
 	private String crimeTypeName;
 	private District district;
-	
-	private Long crimeID;
-	private Long victimID;
+
 	
 	public District getDistrict() {
 		return district;
