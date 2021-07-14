@@ -4,4 +4,4 @@
 
 ## 📋 Visão geral
 DelitosMaps se trata de um projeto de desenvolvimento para a conclusão de curso de Sistemas para Internet do IFB- Instituo Federal de brasília, a sua ideia central é ser uma ferramenta  de mapeamento criminal com a missão de auxiliar a segurança local com informação, unindo a iniciativa popular e a administração pública.
-O sistema tem como principal funcionalidade o registro e o mapeamento dos crimes, dessa forma gerando um insumo de delitos visíveis e traduzidos para a população mais comum informando e prevenindo as futuras vítimas de transitar em locais com maior incidência de crimes.
+O sistema tem como principal funcionalidade o mapeamento dos crimes por meio de um registro da vítima, reletando os dados do ocorrido e pontuando no mapa, dessa forma gerando um insumo de delitos visíveis e traduzidos para a população mais comum informando e prevenindo as futuras vítimas de transitar em locais com maior incidência de crimes.
