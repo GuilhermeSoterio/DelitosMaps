@@ -1,0 +1,36 @@
+.main-header {
+    height: 70px;
+    padding: 0px 20px 20px 15px;
+    display: flex;
+    background-color: rgb(255, 249, 254, 0.4));
+  }
+  
+.container {
+    width: 240px;
+    height: 150px;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+}
+  .logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+  }
+  
+  .logo-text-1 {
+    color: var(--color-coral);
+  }
+
+  .image-size {
+    /*border: 1px solid black;*/
+    width: 100%;
+  }
+  
+  .logo-text-2 {
+    color: #FFF;
+  }
+  
+  @media (max-width: 850px) {
+    .main-header {
+      justify-content: center;
+    }
+  }

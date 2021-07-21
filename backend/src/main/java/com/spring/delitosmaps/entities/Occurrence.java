@@ -45,7 +45,7 @@ public class Occurrence implements Serializable{
 	public Occurrence() {
 	}
 	
-	public Occurrence(Long id, Long longitude, Long latitude, String dayOfTheWeek, String description,
+	public Occurrence(Long id, double longitude, double latitude, String dayOfTheWeek, String description,
 			String felonious_description, Instant moment, Boolean alone, Crime crime, Victim victim, District district) {
 		super();
 		this.id = id;
@@ -163,4 +163,3 @@ public class Occurrence implements Serializable{
 
 	
 }
-	

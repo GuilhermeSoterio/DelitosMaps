@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100&display=swap');
+
+:root {
+  --color-ruby:#ff3847;
+  --color-azul: #38b6ff;
+  --color-dimgray: #4c5d67;
+  --color-black-text: #2d2a1d;
+  --color-black: #0b1f34;
+  --color-white: #ffffff;
+  --color-white-nav: #ebebeb;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-primary {
+  color: var(--color-black);
+}
+
+.text-secondary {
+  color: var(--color-black-text);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
