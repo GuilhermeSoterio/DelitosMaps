@@ -1,5 +1,6 @@
 import React from 'react';
 import Homeimage from '../../assets/home-image.png';
+import { Link } from 'react-router-dom';
 import './styles.css'
 
 const Home = () => (
@@ -14,13 +15,15 @@ const Home = () => (
                             INFORMAÇÃO É SEGURANÇA!JUNTOS POR
                             UMA CIDADE MAIS SEGURA E SEM VIOLÊNCIA!
                         </h3>
-                        <div className="home-actions">
-                            <button className="home-btn-order">
-                                <p>
-                                    SAIBA SOBRE OS CRIMES
-                                </p>
-                            </button>
-                        </div>
+                        <Link to ="/ocorrencias">
+                            <div className="home-actions">
+                                <button className="home-btn-order">
+                                    <p>
+                                        SAIBA SOBRE OS CRIMES
+                                    </p>
+                                </button>
+                            </div>
+                        </Link>
                     </div>
                     <div className="home-image">
                         <img src={Homeimage} className="image-size"/>
