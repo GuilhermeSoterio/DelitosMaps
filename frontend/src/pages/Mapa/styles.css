@@ -1,0 +1,75 @@
+.mapa-container {
+    padding-top: 0px;
+    height: calc(100vh - 154px);
+}
+
+.mapa-content {
+  padding-top:;
+  height: calc(100vh - 154px);
+}
+
+  .home-container h1 {
+    margin: 0;
+  }
+
+  .home-content {
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .home-title {
+    font-weight: bold;
+    font-size: 7vw;
+    line-height: 100px;
+    letter-spacing: -0.015em;
+    color: var(--color-ruby);
+    padding-bottom: 30px;
+    margin-bottom: 40px !important;
+    margin-top: 30px;
+  }
+
+  .home-subtitle {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: var(--color-dimgray);
+    margin-bottom: 30px;
+  }
+
+  .home-btn-order {
+    background-color: var(--color-azul);;
+    border-radius: 10px;
+    height: 70px;
+    width: 80%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: .3rem !important;
+    color: white;
+  }
+
+  .home-btn-order:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.01);
+  }
+
+.home-content {
+  display: flex;
+  justify-content: center;
+}
+
+.home-actions {
+  width: 100%;
+  padding-left: 0px;
+}
+
+.home-image {
+    width: 90%;
+    height: 40%;
+}

@@ -1,0 +1,149 @@
+body {
+  background: #ededed;
+}
+.page-container {
+  padding-top: 100px;
+  height: calc(100vh - 254px);
+  background-image: url("../../assets/Planaltina-mais-segura.jpg");
+}
+    
+.page-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  .filters-container.records-actions {
+    justify-content: flex-end;
+  }
+   
+  .occurrences-table {
+    width: 100%;
+    border-bottom: 10px solid var(--color-azul);
+    border-radius: 0 0 10px 10px;
+    
+  }
+  
+  .occurrences-table thead {
+    background-color: var(--color-azul);
+    text-align: left;
+    color: black;
+    border-radius: 10px;
+
+    
+  }
+  
+  .occurrences-table thead tr {
+    height: 50px;
+    border: solid black 1px;
+    text-align: center;
+  }
+  
+  .descricao-size {
+    width: 700px;
+    padding: 1px;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .Instant-size {
+    color: black;
+    background-color: #f0eeee;
+    border-right: 1px solid black;
+    border-bottom: 0.5px solid black;
+    border-left: 1px solid black;
+    width: 170px;
+    text-align: left;
+  }
+
+  .Crime-size {
+    color: red;
+  }
+
+  .centralizando {
+    text-align: center;
+  }
+
+  .occurrences-table thead th:first-child {
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+  }
+  
+  .occurrences-table thead th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  .occurrences-table tbody td:first-child {
+    padding-left: 20px;
+    
+  }
+
+  
+  .occurrences-table tbody tr {
+    height: 45px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .occurrences-table tbody tr:nth-child(odd) {
+    background-color: rgb(19, 11, 11);
+  }
+  
+  .occurrences-table tbody tr:nth-child(even) {
+    background-color: rgb(16, 6, 6);
+  }
+  
+  .filters-container {
+    background-color: var(--color-darkslategray);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .filters-container input {
+    height: 44px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #9E9E9E;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding-left: 15px;
+  }
+  
+  .filters-container input:focus {
+    outline: none;
+  }
+  
+  .filters-container button {
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 13px 60px;
+  }
+  
+  .filters-container .clean-filters {
+    background-color: green;
+    color: #FFF;
+    margin-left: 20px;
+  }
+  
+  .filters-container .clean-filters:hover {
+    background-color: #e07243;
+  }
+  
+  .filters-container .action-filters {
+    background-color: black;
+    color: #0E1B28;
+  }
+  
+  .filters-container .action-filters:hover {
+    background-color: #04c7ef;
+  }

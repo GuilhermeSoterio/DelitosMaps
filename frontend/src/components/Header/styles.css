@@ -1,11 +1,14 @@
 .main-header {
+    display: flex;
+    justify-content: space-between;
     height: 70px;
     padding: 0px 20px 20px 15px;
     display: flex;
-    background-color: rgb(255, 249, 254, 0.4));
+    background-color: rgb(255, 249, 254, 0.4);
   }
   
-.container {
+.container-logo {
+   cursor: pointer;
     width: 240px;
     height: 150px;
     overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
@@ -27,6 +30,33 @@
   
   .logo-text-2 {
     color: #FFF;
+  }
+
+  ul {
+    margin: auto;
+    overflow: hidden;
+    padding: 30px;
+    font-family: 'Roboto';
+    font-size: 1.3em;
+  }
+
+  .nav_links{
+    list-style: none;
+  }
+
+  .nav_links li {
+  cursor: pointer;
+  display:inline-block;
+  padding: 0px 20px;
+  }
+  
+  .nav_links li a {
+    color: black;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav_links li a:hover {
+    color: red;
   }
   
   @media (max-width: 850px) {

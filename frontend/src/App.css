@@ -10,7 +10,10 @@
   --color-white: #ffffff;
   --color-white-nav: #ebebeb;
 }
-
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
 body, html {
   padding: 0;
   margin: 0;
@@ -19,11 +22,11 @@ body, html {
 * {
   font-family: 'Roboto', sans-serif;
 }
-
+/*
 body {
   background: var(--color-white);
 }
-
+*/
 a {
   text-decoration: none;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Homeimage from '../../assets/home-image.png';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
 import './styles.css'
 
 const Home = () => (
@@ -26,10 +27,11 @@ const Home = () => (
                         </Link>
                     </div>
                     <div className="home-image">
-                        <img src={Homeimage} className="image-size"/>
+                        <img src={Homeimage} className="image-size" alt="imagem ilustrativo de policial prendendo meliante"/>
                     </div>
                 </div>
             </div>
+        <Footer />
     </>
     /*
     <Link to="/orders" className="home-btn-order">
