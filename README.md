@@ -26,7 +26,15 @@ O sistema tem como principal funcionalidade o mapeamento dos crimes por meio de 
 </p>
 
 ## 🔧 Ferramentas para o Desenvolvimento
-Front-End
+<b>Front-End-</b> É o escopo de desenvolvimento das interfaces da aplicação, nesse segmento foi utilizado o framework React, que fornece dentre varios benefícios a SPA- single Page Application, e a componentização de códigos que podem ser reutilizados.<br>
+
+<b>Back-End-</b> Já o backend é o segmento do escopo que lida com o tratamento de dados, modela e cria a lógica da programação, essa parte não é visível para o cliente, essa parte foi construída com a linguagem Java com o framework SpringBoot.<br>
+
+<b>Banco de Dados</b>
+<b>Versionador de Código</b>
+<b>Biblioteca de testes</b>
+<b>Documentação UML</b>
+<b>Documentação da API</b>
 ## 👨‍💻 Integrantes
 Guilherme Henrique Oliveira Sotério
 ## 💡 Soluções para o Problemas Identificados
@@ -39,7 +47,7 @@ Java, Javascript, SQL.
 <b>Leaflet</b> - <br>
 <b>React-Router-Dom</b> - <br>
 <b>SpringBoot</b> - O Spring Boot é um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações. Ele foi a principal framework utilizada no desenvolvimento  da arquitetura backend para a criação da API, rotas, controlador, model.<br>
-<b>SpringJPA</b> - <br>
+<b>SpringJPA</b> - O Spring Data JPA é um framework que facilita a criação de repositórios liberando de ter que implementar as interfaces referentes aos nossos repositórios<br>
 <b>PostgresSQL</b> - <br>
 
 
