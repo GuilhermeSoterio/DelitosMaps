@@ -30,25 +30,55 @@ O sistema tem como principal funcionalidade o mapeamento dos crimes por meio de 
 
 <b>Back-End-</b> Já o backend é o segmento do escopo que lida com o tratamento de dados, modela e cria a lógica da programação, essa parte não é visível para o cliente, essa parte foi construída com a linguagem Java com o framework SpringBoot.<br>
 
-<b>Banco de Dados</b>
-<b>Versionador de Código</b>
-<b>Biblioteca de testes</b>
-<b>Documentação UML</b>
-<b>Documentação da API</b>
+<b>Banco de Dados</b> O banco de dados permite o armazenamento de praticamente qualquer tipo de dado. Velocidade e custo relativamente baixo o tornou popular entre as organizações com grandes bases de clientes. Nessa aplicação foi utilizado o sistema de gerenciamento de banco de dados: PostgresSQL <br>
+
+<b>Versionamento de Código</b> O versionamento de código é possível saber sempre que uma alteração for realizada, quem a fez e o porquê. Esse controle é fundamental para a organização e a segurança do projeto, evitando que aconteçam falhas no processo. Para esse objetivo foi utilizado o próprio github que aqui se encontra. <br>
+
+<b>Biblioteca de testes</b> Os testes de software na prática são realizados para garantir que o usuário do produto poderá ter segurança em utilizar o sistema mesmo em situações de grande estresse para o software.<br>
+
+<b>Documentação UML</b> <br>
+
+<b>Documentação da API</b> A documentação permite que desenvolvedores tenham uma visão mais clara do seu produto e de como o seu código pode funcionar em conjunto com o software deles. Para esse objetivo foi utilizado o framework Swagger, focado nesse objetivo. <br>
+
 ## 👨‍💻 Integrantes
-Guilherme Henrique Oliveira Sotério
+Guilherme Henrique Oliveira Sotério <br>
+
 ## 💡 Soluções para o Problemas Identificados
+### -Documentação da API
+Link da documentação da API construída com o Swagger:
+https://app.swaggerhub.com/apis/delitosmaps/DelitosMaps/0.1#/default/get_occurrences<br>
+
+### -Documentação UML da Arquitetura do Sistema:
+
+### Diagrama de Entidades:
+
+<p align="center">
+  <img src="Diagrama-Entidades.png" width="400" alt="Logo DelitosMaps" />
+</p>
+
+# Diagrama de Classes:
+<p align="center">
+  <img src="Diagrrama-classes.png" width="600" alt="Logo DelitosMaps" />
+</p>
+
+# Diagrama de Pacotes:
+<p align="center">
+  <img src="Diagrama-pacote.png" width="600" alt="Logo DelitosMaps" />
+</p>
+
 ## 🧑‍💻 Linguagens de Programação
 Java, Javascript, SQL.
+
 ## 📝Tecnologias
 <b>ReactJs</b> - <br>
 <b>MomentJs</b> - <br>
 <b>ReactHooks</b> - <br>
 <b>Leaflet</b> - <br>
 <b>React-Router-Dom</b> - <br>
-<b>SpringBoot</b> - O Spring Boot é um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações. Ele foi a principal framework utilizada no desenvolvimento  da arquitetura backend para a criação da API, rotas, controlador, model.<br>
-<b>SpringJPA</b> - O Spring Data JPA é um framework que facilita a criação de repositórios liberando de ter que implementar as interfaces referentes aos nossos repositórios<br>
+<b>SpringBoot</b> - O Spring Boot é um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações. Ele foi a principal framework utilizada no desenvolvimento  da arquitetura backend para a criação da API, rotas, controlador, model. <br>
+<b>SpringJPA</b> - O Spring Data JPA é um framework que facilita a criação de repositórios liberando de ter que implementar as interfaces referentes aos nossos repositórios. <br>
 <b>PostgresSQL</b> - <br>
+<b>Postman</b> - O Postman é um API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Ele foi utilizado com essa finalidade de testar, rodando no modo de testes e no modo de produção. <br>
 
 
 
