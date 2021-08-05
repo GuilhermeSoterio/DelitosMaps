@@ -112,7 +112,7 @@ Java, Javascript, SQL.
 
 <b>Postman -</b> O Postman é um API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Ele foi utilizado com essa finalidade de testar, rodando no modo de testes e no modo de produção. <br>
 
-<b>Junit -</b> unit é um framework simples para escrever testes repetíveis automatizados com suporte na linguagem de programação Java. Com o Junit podemos criar testes para verificar funcionalidades de classes e seus métodos. No desenvolvimento desse projeto foram criadas funções para testar os repositórios.-
+<b>Junit -</b> unit é um framework simples para escrever testes repetíveis automatizados com suporte na linguagem de programação Java. Com o Junit podemos criar testes para verificar funcionalidades de classes e seus métodos. No desenvolvimento desse projeto foram criadas funções para testar os repositórios. <br>
 
-
+<b>Swagger -</b> O Swagger é uma aplicação open source que auxilia desenvolvedores nos processos de definir, criar, documentar e consumir APIs REST. <br>
 
