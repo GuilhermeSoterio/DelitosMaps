@@ -55,17 +55,39 @@ https://app.swaggerhub.com/apis/delitosmaps/DelitosMaps/0.1#/default/get_occurre
 ### Diagrama de Entidades:
 
 <p align="center">
-  <img src="Diagrama-Entidades.png" width="400" alt="Logo DelitosMaps" />
+  <img src="Diagrama-Entidades.png" width="400" alt="Diagrama de entidades UML" />
 </p>
 
 ### Diagrama de Classes:
 <p align="center">
-  <img src="Diagrrama-classes.png" width="600" alt="Logo DelitosMaps" />
+  <img src="Diagrrama-classes.png" width="600" alt="Diagrama de classes UML" />
 </p>
 
 ### Diagrama de Pacotes:
 <p align="center">
-  <img src="Diagrama-pacote.png" width="600" alt="Logo DelitosMaps" />
+  <img src="Diagrama-pacote.png" width="600" alt="Diagrama de pacote UML" />
+</p>
+
+### -Interfaces criadas:
+
+### Página Home
+<p align="center">
+  <img src="Home.jpg" width="600" alt="Página home" />
+</p>
+
+### Página de Mapeamento de Crimes
+<p align="center">
+  <img src="Mapa.jpg" width="600" alt="Página de mapeamento de crime" />
+</p>
+
+### Página de Listagem de Crimes
+<p align="center">
+  <img src="Lista-crimes.jpg" width="600" alt="Página de listagem de crimes" />
+</p>
+
+### Página de Telefonemas
+<p align="center">
+  <img src="Telefonemas.jpg" width="600" alt="Página de telefonemas de denúncia" />
 </p>
 
 ## 🧑‍💻 Linguagens de Programação
