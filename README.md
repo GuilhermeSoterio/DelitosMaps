@@ -8,6 +8,9 @@
 DelitosMaps se trata de um projeto de desenvolvimento para a conclusão de curso de Sistemas para Internet do IFB- Instituo Federal de brasília, a sua ideia central é ser uma ferramenta  de mapeamento criminal com a missão de auxiliar a segurança pública com informação e tecnologia, unindo a iniciativa popular e a administração pública.
 O sistema tem como principal funcionalidade o mapeamento dos crimes por meio de um registro da vítima, relatando os dados do ocorrido e marcando o local no mapa, gerando dessa forma um insumo de delitos visíveis e traduzidos para a população geral que irá se informar e se prevenir evitando transitar em locais com maior incidência de crimes.
 
+## 📝 Modelo Canvas de Projeto
+https://drive.google.com/drive/folders/1GrEwBYy9ZxYZH4TFrVV4_p7tQKJtpige?usp=sharing
+
 ## ✔️ Motivação
 • Altos índices de criminalidade de Planaltina DF.<br>
 • Ausência de um sistema de mapeamento de crimes estritamente local que foque no registro das vítimas.<br>
